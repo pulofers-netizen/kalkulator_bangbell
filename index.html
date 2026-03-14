@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bang Bell - Kalkulator</title>
+    <style>
+        body { 
+            background-color: #001f3f; 
+            color: white; 
+            font-family: Arial, sans-serif; 
+            text-align: center; 
+            padding: 50px; 
+        }
+        .container { 
+            background: #0074D9; 
+            padding: 20px; 
+            border-radius: 15px; 
+            display: inline-block;
+            box-shadow: 0 0 20px rgba(0,0,0,0.5);
+        }
+        input { margin: 10px; padding: 10px; border-radius: 5px; border: none; width: 80%; }
+        button { padding: 10px 20px; background: #FF851B; border: none; color: white; border-radius: 5px; cursor: pointer; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>BANG BELL PRO</h1>
+        <p>Kalkulator Bisnis Online</p>
+        <input type="number" id="harga" placeholder="Harga Produk">
+        <br>
+        <button onclick="cek()">TES HITUNG</button>
+        <h2 id="hasil"></h2>
+    </div>
+
+    <script>
+        function cek() {
+            let h = document.getElementById('harga').value;
+            document.getElementById('hasil').innerText = "Input kamu: " + h;
+        }
+    </script>
+</body>
+</html>
