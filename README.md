@@ -1,1 +1,0 @@
-# kalkulator_bangbell
